@@ -90,8 +90,17 @@ function numeroCandidato(a){
 function carregamentoTela(){
     let localTela = document.querySelector('.tela')
     let carregarPag = new XMLHttpRequest()
+
+    let response = fetch('../tela.html').then(response2 =>{
+
+        return response2.text()
+
+    }).then(response3 => {
+
+        localTela.innerHTML = response3
+    })
     
-    carregarPag.onreadystatechange = () =>{
+/*    carregarPag.onreadystatechange = () =>{
         if(carregarPag.readyState == 4 && carregarPag.status == 200){
             localTela.innerHTML = carregarPag.response
         }else{
@@ -100,7 +109,7 @@ function carregamentoTela(){
     }
 
     carregarPag.open('GET', '../tela.html')
-    carregarPag.send()
+    carregarPag.send()*/
 
     const audioCorrige = new Audio('./audio/tecla1.wav')
     audioCorrige.play()
