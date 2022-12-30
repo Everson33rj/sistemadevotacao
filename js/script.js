@@ -94,6 +94,8 @@ function carregamentoTela(){
     carregarPag.onreadystatechange = () =>{
         if(carregarPag.readyState == 4 && carregarPag.status == 200){
             localTela.innerHTML = carregarPag.response
+        }else{
+            window.print('Algo deu muito errado!')
         }
     }
 
