@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@900&family=Oswald:wght@400;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Urna Eletrônica</title>
+    
+</head>
+<body>
+    <div class="porcentagem">
+
+        <div class="result">
+
+            <div class="resultado">
+
+                <div class="vbrancos">
+                    <p>Brancos <strong class="vbrancos2">0</strong></p>
+                </div>
+                <div class="vnulos">
+                    <p>Nulos <strong class="vnulos2">0</strong></p>
+                </div>
+                <div class="candidatoum">
+                    <p>Polícia <strong class="candidatoumum">0</strong></p>
+                </div>
+                <div class="candidatodois">
+                    <p>Ladrão <strong class="candidatodoisdois">0</strong></p>
+                </div>
+                <div class="totalvotosvalidos">
+                    <p>Votos vál. <strong class="totalvotos">0</strong></p>
+                </div>
+    
+            </div>
+    
+            <div class="porcentagemtopo">
+            
+                <div class="porcent1">
+                    <div><img src="./img/policia.jpg" alt="Candidato Polícia" class="imgpol">
+                    </div>
+                    <div>
+                        <p>Nº22 - Polícia <strong class="por1">0</strong>%</p>
+                    </div>
+                </div>
+                <div class="porcent2">
+                    <div><img src="./img/bandido.jpg" alt="Candidato Ladrão" class="imglad">
+                    </div>
+                    <div>
+                        <p>Nº11 - Ladrão <strong class="por2">0</strong>%</p>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+
+        <div class="barra1">
+            <div class="barra2">
+                <div class="bonequinho"><img src="./img/running.gif" alt=""></div>
+                <div class="porcentagembarra"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <header class="header">
+
+        <!-- <div class="quantvotos">
+            <div class="btnsplay">
+
+                <div class="quantvotosbtn" onclick="quantidadeDeVotos()"><img src="./img/btnplay.png" title="Botão play inicia a contagem dos votos"></div>
+                <div class="pausevotos" onclick="pauseVotos()"><img src="./img/btnpause.png" title="Botão pause pausa a contagem dos votos"></div>
+                <div type="button" value="Reset" class="resetbtn" onclick="resetGeral()"><img src="./img/btnstop.png" title="Botão stop reseta a urna"></div>
+
+            </div>
+        </div> -->
+
+
+
+        <div class="tela">
+
+        
+        </div>
+
+        <div class="adesivo">
+            <h1>everscript</h1>
+        </div>
+        
+    </header>
+
+    
+
+    <main class="botoescontainer">
+        <div class="nome">
+
+            <div class="logo">
+                <img src="./img/pngegg.png" alt="">
+            </div>
+
+            <div class="nomedaurna">
+                Pirataria<br>Eleitoral
+            </div>
+
+        </div>
+        <div class="botoes">
+            <div class="btn1">
+            
+                <input type="button" value="1" class="btnnumeros bton1" onclick="numeroCandidato('1')">
+                <input type="button" value="2" class="btnnumeros bton2" onclick="numeroCandidato('2')">
+                <input type="button" value="3" class="btnnumeros bton3" onclick="numeroCandidato('3')">
+                <input type="button" value="4" class="btnnumeros bton4" onclick="numeroCandidato('4')">
+                <input type="button" value="5" class="btnnumeros bton5" onclick="numeroCandidato('5')">
+                <input type="button" value="6" class="btnnumeros bton6" onclick="numeroCandidato('6')">
+                <input type="button" value="7" class="btnnumeros bton7" onclick="numeroCandidato('7')">
+                <input type="button" value="8" class="btnnumeros bton8" onclick="numeroCandidato('8')">
+                <input type="button" value="9" class="btnnumeros bton9" onclick="numeroCandidato('9')">
+                <input type="button" value="0" class="btnnumeros bton0" onclick="numeroCandidato('0')">
+
+            </div>
+
+            <div class="btn2">
+                <input type="button" value="Branco" class="branco" onclick="btnBranco('branco')" title="Botão voto em branco">
+                <input type="button" value="corrige" class="corrige" onclick="carregamentoTela()" title="Botão corrige">
+                <input type="button" value="confirma" class="confirma" onclick="btnConfirma('confirma')" title="Botão confirma">
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+        <div class="ventilacao"></div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/teste.js"></script>
+    
+</body>
+</html>
